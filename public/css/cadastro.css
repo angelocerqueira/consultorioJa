@@ -1,0 +1,95 @@
+
+.cadastro-main .modal
+{
+  width: 300px;
+  max-width: 100%;
+  margin: 64px auto;
+}
+.cadastro-main .modal h2
+{
+  text-transform: uppercase;
+  color: rgba(0, 201, 215, 100%);
+  font-size: 1em;
+  position: relative;
+  top: -35px;
+  text-align: right;
+}
+.cadastro-main .modal-cadastro h2 
+{
+  text-transform: uppercase;
+  color: rgba(0, 201, 215, 100%);
+  font-size: 1em;
+  position: relative;
+  top: -15px;
+  text-align: right;
+}
+
+
+.cadastro-main  .modal-cadastro
+{
+  width: 300px;
+  max-width: 100%;
+  margin: 64px auto;
+}
+
+.cadastro-main .fechar, .cadastro-main .fechar-cadastro
+{
+  display: none;
+}
+
+
+@media(max-width: 769px)
+{
+.cadastro-main .cadastro-info .texto h2
+{
+font-size: 1em;
+}
+.cadastro-main .cadastro-info .texto p
+{
+  font-size: .8em;
+  width: 90%;
+}
+
+.cadastro-main .modal
+{
+  width: 150px;
+  min-width: 200px;
+  padding: 16px 32px;
+  margin: 32px auto;
+}
+
+.cadastro-main .modal-cadastro
+{
+  width: 150px;
+  min-width: 200px;
+  padding: 16px 32px;
+  margin: 32px auto;
+}
+
+.cadastro-main .modal h2
+{
+  text-transform: uppercase;
+  color: rgba(0, 201, 215, 100%);
+  font-size: 1em;
+  position: relative;
+  top: -35px;
+  text-align: right;
+}
+
+.cadastro-main  .modal-cadastro  button, .cadastro-main .modal button
+{
+  background: #1E385B;
+  border: none;
+  padding: 15px 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  }
+.cadastro-main  .modal-cadastro
+{
+  width: 200px;
+  max-width: 100%;
+  margin: 64px auto;
+}
+
+}

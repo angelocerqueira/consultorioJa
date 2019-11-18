@@ -1,0 +1,203 @@
+
+.menu-mobile
+{
+  display: none;
+}
+.wpp
+{
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+  z-index: 99999;
+
+}
+.wpp img
+{
+  width: 80px;
+}
+
+.menu-clean
+{
+  display: none;
+}
+@media(max-Width: 769px)
+{
+    .menu-clean
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .menu-clean .logo
+    {
+      width: 200px;
+
+    }
+
+    .menu-clean .menu button
+    {
+      background: none;
+      border: 0;
+      padding: 10px;
+    }
+    .menu-clean .menu .svg-inline--fa
+    {
+      color: #00C9D7;
+      width: 30px;
+      height: 30px;
+    }
+    #header
+    {
+      display: none;
+    }
+
+.menu-mobile
+{
+  width: 250px;
+  margin-left: -250px;
+}
+
+.menu-mobile.active
+{
+  display: block;
+  margin-left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-mobile.active header
+{
+  background: #fff;
+  width: 250px;
+  height: 100%;
+}
+.menu-mobile.active .fechar
+{
+  top: -5px;
+  left: 230px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #00C9D7;
+  color: #00C9D7 ;
+  font-size: 1.5em;
+
+}
+.menu-mobile.active .container
+{
+  padding: 32px 20px;
+}
+.menu-mobile.active .container  .logo
+{
+width: 200px;
+margin: 0 auto;
+}
+.menu-mobile.active .container  .busca
+{
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.menu-mobile.active .container  .busca input[type="search"]
+{
+  background: #DDEAFD ;
+  border: 0;
+  padding: 10px 5px;
+  border-radius: 5px 0px 0px 5px;
+  outline: none;
+  color: #A7A0A1;
+  margin: 0 auto;
+  width:75%;
+
+}
+.menu-mobile.active .container  .busca input[type="submit"]
+{
+  background: #fff;
+  padding: 10px 0;
+  margin: 0;
+  border: 0;
+  background: url("/assets/img/icons/button-busca.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  position: relative;
+  left: -10px;
+  border-radius:  0px 3px 3px 0px;
+
+}
+
+
+.menu-mobile.active .container  .menu ul
+{
+margin-bottom: 30px;
+
+}
+.menu-mobile.active .container  .menu ul li
+{
+  margin: 15px 0;
+}
+.menu-mobile.active .container  .menu ul li a
+{
+  color: #1E385B;
+  font-size: .9em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu-mobile.active .container  .menu ul li a:hover
+{
+  padding: 7px 0;
+  border-bottom: solid 2px #1E385B ;
+  transition: .5s ;
+}
+
+.menu-mobile.active .container  .login p
+{
+  font-size: .9em;
+  color: #2B90FF;
+  padding: 0 0 20px;
+  text-transform: uppercase;
+}
+.menu-mobile.active .container  .login button
+{
+background: none;
+border: none;
+}
+
+.menu-mobile.active .container  .login  img
+{
+  width: 60px;
+}
+.menu-mobile.active .container .actions p
+{
+  font-size: .9em;
+  color: #1E385B;
+  padding:   50px 0 0;
+  text-transform: uppercase;
+}
+
+.menu-mobile.active .container .actions .rs
+{
+  display: flex;
+}
+.menu-mobile.active .container .actions .rs li
+{
+padding-right: 20px;
+}
+.menu-mobile.active .container .actions .rs li img
+{
+  width: 50px;
+}
+
+
+}

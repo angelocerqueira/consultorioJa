@@ -1,0 +1,38 @@
+/* Style the form */
+
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+
+
+/* Mark the active step: */
+ .step.active, .stepspan.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+ .step.finish .svg-inline--fa,
+ .step.finish ,
+ .stepspan .svg-inline--fa,
+ .stepspan.finish {
+   color: #00C9D7;
+}
+
+.cadastro-main .etapas div.active,
+.cadastro-main .etapas div.active .svg-inline--fa,
+.cadastro-main .etapas span.active,
+.cadastro-main .etapas span.active .svg-inline--fa
+
+
+{
+ color: #00C9D7;
+}

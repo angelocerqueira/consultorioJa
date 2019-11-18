@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90" viewBox="0 0 90 90">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_9" data-name="Ellipse 9" cx="29.5" cy="29.5" r="29.5" transform="translate(0.161 -0.356)" fill="#eee"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="20.5" cy="20.5" r="20.5" transform="translate(0.02)" fill="#2b90ff"/>
+    </clipPath>
+  </defs>
+  <g id="login" transform="translate(-465 132)">
+    <g id="login-2" data-name="login" transform="translate(465 -118.376)">
+      <ellipse id="Ellipse_11" data-name="Ellipse 11" cx="38.5" cy="38" rx="38.5" ry="38" transform="translate(0 0.376)" fill="#ddeafd"/>
+      <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(8.839 14.732)" clip-path="url(#clip-path)">
+        <g id="user" transform="translate(4.718 0.891)">
+          <circle id="Ellipse_10" data-name="Ellipse 10" cx="13.726" cy="13.726" r="13.726" transform="translate(11.153)" fill="#2b90ff"/>
+          <path id="Path_5" data-name="Path 5" d="M26.951,15.072A24.879,24.879,0,0,0,2.072,39.951H51.83A24.879,24.879,0,0,0,26.951,15.072Z" transform="translate(-2.072 19.243)" fill="#2b90ff"/>
+        </g>
+      </g>
+    </g>
+    <g id="lock" transform="translate(513.98 -132)">
+      <circle id="Ellipse_12" data-name="Ellipse 12" cx="20.5" cy="20.5" r="20.5" transform="translate(0.02)" fill="#2b90ff"/>
+      <g id="lock-2" data-name="lock" clip-path="url(#clip-path-2)">
+        <g id="padlock" transform="translate(12.589 8.839)">
+          <path id="Path_6" data-name="Path 6" d="M18.911,10.483a1.453,1.453,0,0,0-1.067-.439h-.5V7.03A6.765,6.765,0,0,0,15.27,2.072,6.765,6.765,0,0,0,10.312,0,6.765,6.765,0,0,0,5.353,2.071,6.765,6.765,0,0,0,3.281,7.03v3.013h-.5a1.453,1.453,0,0,0-1.067.439,1.452,1.452,0,0,0-.439,1.067v9.039a1.454,1.454,0,0,0,.439,1.067,1.454,1.454,0,0,0,1.067.439H17.844a1.5,1.5,0,0,0,1.507-1.506V11.55A1.452,1.452,0,0,0,18.911,10.483Zm-4.582-.439H6.294V7.03A3.87,3.87,0,0,1,7.471,4.19a3.871,3.871,0,0,1,2.84-1.177,3.87,3.87,0,0,1,2.84,1.177,3.871,3.871,0,0,1,1.177,2.84Z" transform="translate(-1.273 0)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

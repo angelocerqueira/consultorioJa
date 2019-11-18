@@ -1,0 +1,552 @@
+
+#header
+{
+  background-color: #fff;
+
+  padding-bottom: 32px;
+  border-bottom: rgba(0, 201, 215, 20%) 2px solid;
+}
+#header .container
+{
+max-width: 90%;
+margin: 0 auto;
+}
+
+#header .topo
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#header .topo .actions
+{
+  display: flex;
+  justify-content: flex-end;
+}
+#header .topo .wpp
+{
+ display: flex;
+ align-items: center;
+ padding-right: 100px;
+}
+#header .topo .wpp p
+{
+  color: #00C9D7;
+  font-size: 1.5em;
+  padding-left: 0px;
+}
+
+#header .topo .wpp img
+{
+  width: 80px;
+}
+
+#header .topo .rs
+{
+  display: flex;
+  align-items: center;
+}
+#header .topo .rs li
+{
+  padding-left: 10px;
+}
+#header .topo .rs  img
+{
+  width: 40px;
+}
+
+#header .topo .rs  button
+{
+  background: none;
+  border: 0;
+}
+
+#header .topo .rs  button img
+{
+  width: 50px;
+}
+
+#header .menu
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .menu ul
+{
+  padding: 5px 0;
+  display: flex;
+}
+#header .menu ul li
+{
+  padding: 0 10px;
+}
+
+#header .menu ul li a
+{
+  color: #1E385B;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#header .menu ul li.active a
+{
+    padding: 7px 0;
+    border-bottom: solid 2px #1E385B ;
+    transition: .5s ;
+
+}
+#header .menu ul li a:hover
+{
+  padding: 7px 0;
+  border-bottom: solid 2px #1E385B ;
+  transition: .5s   ;
+
+
+}
+
+
+
+#header .menu .busca
+{
+  display: flex;
+  align-items: center;
+}
+#header .menu .busca input[type="search"]
+{
+  background: #DDEAFD ;
+  border: 0;
+  padding: 10px 5px;
+  border-radius: 5px 0px 0px 5px;
+  outline: none;
+  color: #A7A0A1;
+  margin: 0;
+}
+#header .menu .busca input[type="submit"]
+{
+  background: #fff;
+  padding: 10px 0;
+  margin: 0;
+  border: 0;
+  background: url("/assets/img/icons/button-busca.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  color: transparent;
+  position: relative;;
+  left: -10px;
+  border-radius:  0px 3px 3px 0px;
+
+}
+
+
+/* ========================================================= */
+#introducao .intro
+{
+  padding:  50px 0 70px 0;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+#introducao .img-slide img
+{
+  position: absolute;
+  z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+  width: 100%;
+  height: 720px;
+  overflow: hidden;
+}
+
+#introducao .card-1
+{
+  background: rgba(30, 56, 91, 70%);
+  flex-shrink: 0;
+  padding: 50px;
+  color: #fff;
+}
+
+#introducao .card-1 h2
+{
+  font-size: 1.4em;
+  padding-bottom: 32px;
+}
+
+#introducao .card-1 div
+{
+  display: flex;
+  justify-content: center;
+}
+#introducao .card-1 div ul
+{
+  padding: 0 20px;
+}
+#introducao .card-1 div ul li
+{
+  display: grid;
+  padding: 10px 0;
+  align-items: center;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+}
+
+#introducao .card-1 div ul li p
+{
+  padding-left: 10px;
+}
+
+#introducao .button-intro
+{
+  padding-top: 20px;
+}
+
+#introducao .button-intro button
+{
+background: #2B90FF;
+color: #fff;
+border: none;
+padding: 13px 30px;
+border-radius: 5px;
+}
+
+#introducao .card-2
+{
+  background: #00C9D7;
+  flex-shrink: 0;
+  padding: 30px;
+  width: 350px;
+}
+
+#introducao .card-2 h2
+{
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+}
+#introducao .card-2 p
+{
+  text-align: center;
+  color: #fff;
+  line-height: 1.6em;
+  padding: 30px 0;
+}
+
+
+#introducao .card-2 form
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#introducao .card-2 form label
+{
+color: #fff;
+font-size: 0.9em;
+padding: 10px 0;
+}
+
+#introducao .card-2 form select
+{
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: #A7A0A1;
+  outline: none;
+}
+
+
+
+#introducao .card-2 form button
+{
+background:#1E385B;
+border: none;
+padding: 15px;
+border-radius: 3px;
+color: #fff;
+margin-top: 20px;
+}
+
+/* ===============================*/
+
+#section-2 .section2-cards
+{
+  display: flex;
+}
+
+#section-2 .card-item
+{
+display: flex;
+flex-direction: column;
+padding: 32px;
+justify-content: center;
+background: #283957;
+color: #fff;
+}
+#section-2 .card-item .item-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section-2 .card-item .item-header .img
+{
+  border-radius: 50%;
+}
+
+#section-2 .card-item .item-header img
+{
+  width: 200px;
+}
+#section-2 .card-item .item-text
+{
+padding: 0 0px 0 20px;
+}
+
+#section-2 .card-item .item-text h2
+{
+font-size: 1.2em;
+text-transform: uppercase;
+color: #fff;
+padding: 10px 0;
+}
+
+#section-2 .card-item .item-text p
+{
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+
+#section-2 .card-item .paragrafo
+{
+  padding-top: 30px;
+  font-size: .9em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+#section-2 .card-item .button
+{
+  text-align: right;
+}
+
+#section-2 .card-item .button button
+{
+  background: #00CAD8;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+#section-2 .card-item .button button:hover
+{
+  transform: translatey(-3px);
+}
+/* ============= */
+#section-3
+{
+  background: url("/assets/img/consultorio02.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section-3 .content-section3
+{
+padding: 64px;
+background: rgba(30, 56, 91, 70%);
+width: 42%;
+display: flex;
+flex-direction: column;
+color: #fff;
+}
+
+#section-3 .content-section3 h1
+{
+  line-height: 1.5em;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-bottom: 44px;
+  font-weight: bold;
+}
+#section-3 .content-section3 p
+{
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 20px 0;
+}
+#section-3 .content-section3  .button
+{
+  text-align: center ;
+  padding-top: 30px;
+
+}
+
+#section-4
+{
+  background: #000;
+}
+#section-4 img{
+  width: 100%;
+}
+
+
+#section-3 .content-section3  button
+{
+  background: #00C9D7;
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 3px;
+}
+#section-3 .content-section3  button:hover
+{
+    transform: translateY(-5px);
+    transition: .20s;
+}
+button:hover
+{
+    transform: translateY(-5px);
+    transition: .20s;
+}
+
+
+/* ================================== */
+
+footer {
+  background: #00CAD8;
+
+  }
+  footer .container-footer
+  {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 64px;
+  color: #fff;
+  }
+
+  footer .content-footer
+  {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  }
+
+  footer .content-footer ul h2
+  {
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+  footer .content-footer ul li
+  {
+    margin-left: 30px;
+    margin-top: 10px;
+
+  }
+  footer .content-footer ul li:hover
+
+  {
+    transform: translateX(-10px);
+  }
+
+  footer .content-footer ul li a
+  {
+    color: #fff;
+  }
+
+  footer .content-footer ul li a:hover
+  {
+    color: #1E385B;
+  }
+
+  footer .content-footer .contato h3
+  {
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+
+  footer .content-footer form .campos
+  {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+  }
+
+  footer .content-footer .contato .icon
+  {
+  background: #1E385B;
+  /* padding: 10px 10px; */
+  text-align: center;
+  }
+
+
+  .icon .svg-inline--fa
+  {
+  color: #00CAD8;
+  font-size: 1em;
+  padding: 10px;
+  }
+  footer .content-footer .contato input
+  {
+    border: 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 0 3px 3px 0px;
+    color: #A7A0A1;
+    width: 100%;
+  }
+
+  footer .content-footer .contato textarea
+  {
+    border: 0;
+    outline: none;
+    padding: 10px;
+    border-radius: 0 3px 3px 0px;
+    color: #A7A0A1;
+  max-width: 100%;
+  width: 100%;
+  }
+  footer .content-footer .button
+  {
+    text-align: right;
+
+  }
+
+  footer .content-footer button
+  {
+    border: none;
+    background: #1E385B;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+
+  footer .download
+  {
+    position: relative;
+    top: -100px;
+  }
+  footer .download ul
+  {
+    display: flex;
+  }
+
+  footer .download ul li
+  {
+    margin-left: 10px;
+  }
+
+
+  footer .download ul img
+  {
+   max-width: 200px;
+   height: 50px;
+  }

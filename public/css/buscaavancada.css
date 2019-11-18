@@ -1,0 +1,168 @@
+
+.busca-avancada .cadastro-info
+{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.busca-avancada .cadastro-info .svg-inline--fa
+{
+  width: 30px;
+  height: 30px;
+  color: #00C9D7;
+}
+
+.busca-avancada .cadastro-info .texto h2
+{
+    color: #00C9D7;
+    font-weight: bold;
+}
+
+.busca-avancada .content-form
+{
+  max-width: 980px;
+  margin: 32px 64px;
+}
+
+.busca-avancada .content-form select
+{
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: #A7A0A1;
+    outline: none;
+    background: rgba(0, 201, 215, 10%);
+    width: 300px;
+    margin-right: 30px;
+}
+
+
+.busca-avancada .content-form h3
+{
+color: rgba(0, 201, 215, 100%);
+  font-size: 1em;
+  text-align: left;
+  padding: 30px 0 0;
+  text-transform: uppercase;
+}
+
+.busca-avancada .content-form .atendimento
+{
+    display: flex;
+}
+
+.busca-avancada .content-form .atendimento .periodo-aten
+{
+margin-right: 128px;
+}
+
+
+.busca-avancada .content-form .atendimento .dias-aten .input-group
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.busca-avancada .content-form .especialidades .especialidades-group
+{
+    display: flex;
+}
+
+.busca-avancada .content-form .equipamentos .equipamentos-group
+{
+    display: flex;
+}
+
+
+
+.busca-avancada .content-form  .especialidades .especialidades-group ,
+.busca-avancada .content-form .equipamentos .equipamentos-group
+
+{
+display: flex;
+
+}
+
+
+.busca-avancada .content-form .check-group
+{
+display: grid;
+grid-template-columns: 20px 1fr;
+gap: 5px;
+margin-top: 16px;
+margin-right: 40px;
+
+}
+
+.busca-avancada .content-form input[type="checkbox"]
+{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+.busca-avancada .content-form .button
+{
+    margin-top: 64px;
+}
+.busca-avancada .content-form .button button
+{
+background-color: #1E385B;
+padding: 20px 30px;
+border: 0;
+color: #fff;
+font-size: 1.2em;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+@media(max-width: 769px)
+{
+    .busca-avancada .content-form select
+    {
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        color: #A7A0A1;
+        outline: none;
+        background: rgba(0, 201, 215, 10%);
+        width: 250px;
+        margin-right: 30px;
+    }
+    .busca-avancada .content-form .equipamentos .equipamentos-group
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    .busca-avancada .content-form .especialidades .especialidades-group
+    {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media(max-width:450px)
+{
+    .busca-avancada .content-form
+{
+  max-width: 980px;
+  margin: 32px 32px;
+}
+
+    .busca-avancada .content-form .atendimento
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .busca-avancada .content-form .atendimento .dias-aten .input-group
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}

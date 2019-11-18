@@ -1,0 +1,20 @@
+@import "all.css";
+@import "home.css";
+@import "modal.css";
+@import "home-responsivo.css";
+@import "menu-mobile.css";
+@import "cadastro.css";
+@import "cadastroConsultorio.css";
+@import "testTab.css";
+@import "dropzone.css";
+@import "buscaavancada.css";
+@import "resultbusca.css";
+
+
+body, input, button, textarea, label {font-family: 'Raleway', sans-serif;}
+h1, h2, h3, h4{ font-family: 'Poppins', sans-serif;}
+
+.rotate90{
+    transform: rotate(90deg);
+
+}

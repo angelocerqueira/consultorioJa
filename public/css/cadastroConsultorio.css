@@ -1,0 +1,558 @@
+
+
+.cadastro-main .cadastro-info
+{
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 10px;
+  padding-top: 20px;
+  padding-left: 30px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cadastro-main  .cadastro-info .svg-inline--fa
+{
+  width: 30px;
+  height: 30px;
+  color: #00C9D7;
+}
+.cadastro-main .etapas
+{
+  color: gray;
+}
+
+.cadastro-main .etapas .svg-inline--fa
+{
+  color: gray;
+  width: 50px;
+  height: 50px;
+}
+.cadastro-main .etapas div.active,
+.cadastro-main .etapas div.active .svg-inline--fa,
+.cadastro-main .etapas  span.active .svg-inline--fa
+
+{
+ color: #00C9D7;
+}
+
+.cadastro-main .cadastro-info .texto h2
+{
+  font-size: 1.3em;
+  color: rgba(0, 201, 215, 100%);
+  font-weight: bold;
+}
+
+.cadastro-main .cadastro-info .texto p
+{
+  font-size: .9em;
+  line-height: 1.5em;
+
+}
+
+.cadastro-main .cadastro-anunciante
+{
+  display: block;
+}
+.cadastro-main .cadastro-salas
+{
+    max-width: 960px;
+    margin: 0 64px;
+}
+
+
+.cadastro-main .cadastro-salas .etapas
+{
+  display: flex;
+  padding: 64px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cadastro-main .cadastro-salas .etapas div
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.cadastro-main .cadastro-salas .etapas div p
+{
+  padding-top: 15px;
+}
+
+
+.cadastro-main .parteUm-cadastro
+{
+  margin: 64px 0;
+
+
+}
+.cadastro-main .parteUm-cadastro span
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cadastro-main  .form-group
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 30px;
+  max-width: 100%;
+
+}
+
+.pequeno
+{
+flex: 20%;
+}
+.grande{
+flex: 30%;
+}
+
+.cadastro-main  .form-group label
+{
+  color: rgba(0, 201, 215, 100%);
+  font-size: 1em;
+  text-align: right;
+  padding: 10px 0;
+}
+
+.cadastro-main  .form-group input
+{
+  width: 100%;
+  border: rgba(187, 184, 184, 30%) solid 2px;
+  background: rgba(69, 203, 240, 10%);
+  padding: 15px 10px;
+  border-radius: 5px;
+  color: gray;
+  outline-color: #00C9D7;
+}
+.cadastro-main  .form-group textarea
+
+{
+  width: 100%;
+  max-width: 100%;
+  border: rgba(187, 184, 184, 30%) solid 2px;
+  background: rgba(69, 203, 240, 10%);
+  padding: 15px 10px;
+  border-radius: 5px;
+  color: gray;
+  outline-color: #00C9D7;
+}
+
+.cadastro-main   button
+
+{
+  background: #1E385B;
+  border: none;
+  padding: 20px 40px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+
+/* =================================== */
+/* step 2 */
+/* =================================== */
+
+
+.tab .complementares
+{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 80px;
+}
+
+
+.tab .complementares .sub-title
+{
+  color: rgba(0, 201, 215, 100%);
+  font-size: 1em;
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+
+.tab .complementares  .check
+{
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+ gap: 10px;
+ /* justify-content: center; */
+ align-items: center;
+}
+
+.tab .complementares  .check .item-check
+{
+  margin-right: 64px;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tab .complementares  .check .item-check input
+{
+  width: 20px;
+  height: 20px;
+}
+
+.tab .complementares  .check .item-check input:checked
+{
+  background: chartreuse;
+}
+
+/* =================================== */
+/* step 2 */
+/* =================================== */
+
+/* =================================== */
+/* step 3 */
+/* =================================== */
+
+
+
+.tab .imagens
+{
+  margin: 32px 0 64px;
+
+}
+
+.tab .tabh2
+{
+  color: rgba(0, 201, 215, 100%);
+  font-size: 1em;
+  text-align: left;
+  padding: 40px 0 10px;
+}
+
+.tab .tabh2 span
+{
+  font-weight: bold;
+}
+/* =================================== */
+/* step 3 */
+/* =================================== */
+
+/* =================================== */
+/* step 4 */
+/* =================================== */
+
+
+
+.tab .agenda
+{
+  margin: 50px 0;
+}
+
+.tab .agenda h3
+{
+  color: rgba(0, 201, 215, 100%);
+  font-size: 1em;
+  text-align: left;
+
+}
+
+.tab .agenda .sub-title
+{
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0 0;
+}
+
+.tab .agenda .svg-inline--fa
+{
+  color: #00C9D7;
+  width: 29px;
+  height: 29px;
+}
+
+
+.tab .agenda input[type="checkbox"]
+{
+  width: 20px;
+  height: 20px;
+}
+.tab .agenda .periodo-aten .input-group
+{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.tab .agenda .valores .input-group
+{
+  display: grid;
+  grid-template-columns: 250px 250px   400px;
+  align-items: center;
+  gap: 30px;
+  margin-left: 30px;
+
+}
+
+.tab .agenda .valores .input-group div input
+{
+  border: 0;
+  padding: 10px;
+  width: 100px;
+  background: rgba(0, 201, 255, 20%);
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.tab .agenda .dias-aten .input-group
+{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin-left: 30px;
+
+
+}
+
+
+.tab .agenda .input-group .check-group
+{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  margin-right: 60px;
+  margin-top: 20px;
+}
+
+/* =================================== */
+/* step 4 */
+/* =================================== */
+
+
+@media(max-width: 769px)
+{
+
+    .cadastro-main .etapas .svg-inline--fa
+    {
+      color: gray;
+      width: 30px;
+      height: 30px;
+    }
+    .cadastro-main .cadastro-salas
+    {
+      max-width: 90%;
+      margin: 0 20px;
+    }
+    .tab .complementares  .check
+        {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        /* justify-content: center; */
+        align-items: center;
+        }
+        .tab .agenda .dias-aten .input-group
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 30px;
+
+
+}
+.tab .agenda .valores .input-group
+{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+
+}
+
+}
+
+@media(max-width: 450px)
+{
+    .cadastro-main .cadastro-info p
+    {
+        font-size: .8em;
+
+    }
+    .cadastro-main .cadastro-salas .etapas
+        {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        }
+
+        .cadastro-main .etapas .svg-inline--fa
+        {
+            margin: 30px 0;
+        }
+        .cadastro-main .etapas .svg-inline--fa
+{
+  color: gray;
+  width: 40px;
+  height: 40px;
+}
+    .cadastro-main .cadastro-salas p
+    {
+        font-size: .8em;
+    }
+    .cadastro-main .cadastro-salas .step p
+    {
+        display: none;
+    }
+
+    .cadastro-main .parteUm-cadastro
+        {
+            margin: 34px 0;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .cadastro-main  .form-group
+        {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 5px;
+        max-width: 90%;
+        }
+        .cadastro-main .parteUm-cadastro span
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.cadastro-main  .form-group textarea,
+.cadastro-main  .form-group input
+{
+    font-size: .8em;
+}
+.tab .complementares
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0 80px;
+  align-items: center;
+}
+
+
+.tab .complementares  .check
+{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ justify-content: center;
+
+}
+
+.tab .complementares  .check .item-check
+{
+    font-size: .8em;
+}
+.tab .complementares  .check .item-check
+{
+  margin-right: 16px;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.tab .complementares  .check .item-check input
+{
+  width: 20px;
+  height: 20px;
+}
+
+.tab .agenda .dias-aten .input-group
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 30px;}
+/*
+==============================
+step 3
+===========================
+ */
+ .tab .imagens
+ {
+   margin: 16px 0 64px;
+
+ }
+
+ .tab .tabh2
+ {
+   color: rgba(0, 201, 215, 100%);
+   font-size: .9em;
+   text-align: center;
+   padding: 20px 0 10px;
+ }
+
+.tab .agenda .valores .input-group
+    {
+    display: flex;
+        flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+
+    }
+
+/*
+    ====================
+    step 4
+    ======================= */
+
+
+    .tab .agenda .svg-inline--fa
+{
+  color: #00C9D7;
+  width: 20px;
+  height: 20px;
+}
+.tab .agenda .periodo-aten .input-group
+{
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 0px;
+
+}
+.tab .agenda .valores .input-group
+{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-left: 10px;
+
+}
+.cadastro-main .button
+{
+    text-align: center;
+}
+
+.tab .agenda .dias-aten .input-group
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 10px;
+
+}
+.tab .agenda .input-group .mensal
+{
+    margin: 20px 0;
+}
+
+.tab .agenda label
+{
+    font-size: .9em;
+}
+}
