@@ -6,9 +6,9 @@ export default function initModal() {
   const modalCadastro = document.querySelector('[data-modal="modalCadastro"]');
   const abrirCadastro = document.querySelector('[data-modal="abrirCadastro"]');
   const fecharCadastro = document.querySelector('[data-modal="fecharCadastro"]');
-  
+
   if(botaoAbrir && botaoFechar && containerModal) {
-    
+
     function toggleModal(event) {
       event.preventDefault();
       containerModal.classList.toggle('ativo');
@@ -24,16 +24,17 @@ export default function initModal() {
       modal.classList.remove('ativo')
       modalCadastro.classList.add('ativo')
     }
-  
-    
+
+
     function colocarLogin(event){
       event.preventDefault();
       modal.classList.add('ativo')
       modalCadastro.classList.remove('ativo')
     }
- 
+
 
     botaoAbrir.addEventListener('click', toggleModal);
+    botaoAbrirMobile.addEventListener('click', toggleModal);
     botaoFechar.addEventListener('click', toggleModal);
     abrirCadastro.addEventListener('click', cadastro);
     fecharCadastro.addEventListener('click',  colocarLogin);

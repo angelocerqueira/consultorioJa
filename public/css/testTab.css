@@ -3,7 +3,7 @@
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
-  background-color: #ffdddd;
+  background-color: #e54 !important;
 }
 
 /* Hide all steps by default: */
