@@ -42,7 +42,7 @@ class AuthController extends Controller
             'password' => $request->password
         ];
         if(!Auth::attempt($credenciais))
-            return redirect('/cadastro');
+            return redirect()->back()->with('msg', 'Deu ruim boy');
 
             // $user = $request->user();
             // $token = $user->createToken('Token de acesso')->accessToken;
@@ -62,6 +62,7 @@ class AuthController extends Controller
     {
 
     }
+
 
 
 

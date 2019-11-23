@@ -57,36 +57,36 @@
                         <div class="parteUm-cadastro cadastrais ">
                             <div class="form-group lg" >
                                 <label for="">Título do anúncio</label>
-                                <input type="text" placeholder="Insira um título para seu anúncio com no máximo 80 caracteres. Ex: Sala ampla e completa para atendimento no centro de São Paulo" maxlength="80" oninput="this.className = ''" name="title">
+                                <input type="text" class="validando" placeholder="Insira um título para seu anúncio com no máximo 80 caracteres. Ex: Sala ampla e completa para atendimento no centro de São Paulo" maxlength="80" oninput="this.className = ''" name="title">
                             </div>
                             <div class="form-group lg">
                                 <label for="">Descrição da Sala</label>
-                                <textarea name="description" id="" rows="7" placeholder="Descrição detalhada da sala e seus principais diferencias. Fornecer informações sobre localização, equipamentos, insumos, etc" oninput="this.className = ''"></textarea >
+                                <textarea name="description" id="" class="validando" rows="7" placeholder="Descrição detalhada da sala e seus principais diferencias. Fornecer informações sobre localização, equipamentos, insumos, etc" oninput="this.className = ''"></textarea >
                             </div>
                             <span>
                                 <div class="form-group pequeno">
                                     <label for="">Cep</label>
-                                    <input type="number" placeholder="Somente Números" id="cep" name="cep" maxlength="9" oninput="this.className = ''">
+                                    <input type="number" class="validando" placeholder="Somente Números" id="cep" name="cep" maxlength="9" oninput="this.className = ''">
                                 </div>
                                 <div class="form-group pequeno">
                                     <label for="">Estado</label>
-                                    <input type="text" id="uf" name="uf" oninput="this.className = ''">
+                                    <input type="text" id="uf" class="validando" name="uf" oninput="this.className = ''">
                                 </div>
                                 <div class="form-group grande">
                                     <label for="">Cidade</label>
-                                    <input type="text" id="cidade" name="cidade" oninput="this.className = ''">
+                                    <input type="text" id="cidade" name="cidade" class="validando" oninput="this.className = ''">
                                 </div>
                                 <div class="form-group grande">
                                     <label for="">Rua</label>
-                                    <input type="text" id="rua" name="endereco" oninput="this.className = ''">
+                                    <input type="text" id="rua" class="validando" name="endereco" oninput="this.className = ''">
                                 </div>
                                 <div class="form-group pequeno ">
                                     <label for="">Número</label>
-                                    <input type="number" id="numero" name="number" maxlength="8" oninput="this.className = ''">
+                                    <input type="number" id="numero" name="number" class="validando" maxlength="8" oninput="this.className = ''">
                                 </div>
                                 <div class="form-group pequeno">
                                     <label for="">Complemento</label>
-                                    <input type="text" id="complemento" name="complement" oninput="this.className = ''">
+                                    <input type="text" id="complemento" name="complement">
                                 </div>
                             </span>
                         </div>

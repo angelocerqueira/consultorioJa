@@ -3,10 +3,10 @@ export default function initMenu() {
   const botaoFecharMenu = document.querySelector('[data-menu="fechar"]');
   const containerMenu = document.querySelector('[data-menu="container"]');
   // const modal = document.querySelector('[data-modal="modal"]');
-  
-  
+
+
   if(botaoAbrirMenu && botaoFecharMenu && containerMenu) {
-    
+
     function toggleMenu(event) {
       event.preventDefault();
       containerMenu.classList.toggle('active');
@@ -22,14 +22,14 @@ export default function initMenu() {
     //   modal.classList.remove('active')
     //   modalCadastro.classList.add('active')
     // }
-  
-    
+
+
     // function colocarLogin(event){
     //   event.preventDefault();
     //   modal.classList.add('active')
     //   modalCadastro.classList.remove('active')
     // }
-  
+
 
     botaoAbrirMenu.addEventListener('click', toggleMenu);
     botaoFecharMenu.addEventListener('click', toggleMenu);

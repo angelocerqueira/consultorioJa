@@ -1,10 +1,10 @@
 
-<section class="modal-container" data-modal="container" data-modalMoblie="container" id='login'>
+<section class="modal-container modalContainer" data-modal="container" id='login'>
     <div class="modal ativo" data-modal="modal">
         <div class="imagem-modal">
             <img src="{{asset('assets/img/logoConsultorio.jpg')}}" alt="" srcset="">
         </div>
-        <button class="fechar" data-modal="fechar" data-modalMobile="fechar">X</button>
+        <button class="fechar fecharmMdal" data-modal="fechar" data-modalMobile="fechar">X</button>
         <form action="api/auth/login" method="POST">
             @csrf
             <label for=""> Usuário</label>
@@ -80,10 +80,7 @@
     </form>
 
 </div>
-
-
 </section>
-
 
 <div class="menu-mobile" data-menu="container">
         <header >
@@ -131,4 +128,4 @@
           </div>
         </div>
       </header>
-    </div>
+</div>

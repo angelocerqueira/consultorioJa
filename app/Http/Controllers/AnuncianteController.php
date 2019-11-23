@@ -43,25 +43,24 @@ class AnuncianteController extends Controller
     public function store(Request $request)
     {
 
-    //  {
-            // $request->valide([
-            //     'title' => 'required|min:15|max:80',
-            //     'description' => 'required',
-            //     'cep' => 'required',
-            //     'uf' => 'required',
-            //     'cidade' => 'required',
-            //     'endereco' => 'required',
-            //     'number' => 'required',
-            //     'structure' => 'required',
-            //     'specialties' => 'required',
-            //     'equipaments' => 'required',
-            //     'period_atend' => 'required',
-            //     'days_atend' => 'required',
-            //     'value_h' => 'required',
-            //     'value_m' => 'required',
 
-            // ]);
-    //    }
+            $request->validate([
+                'title' => 'required|min:15|max:80',
+                'description' => 'required',
+                'cep' => 'required',
+                'uf' => 'required',
+                'cidade' => 'required',
+                'endereco' => 'required',
+                'number' => 'required',
+                'structure' => 'required',
+                'specialties' => 'required',
+                'equipaments' => 'required',
+                'period_atend' => 'required',
+                'days_atend' => 'required',
+                'value_h' => 'required',
+                'value_m' => 'required',
+            ]);
+
         $path = $request->file('file')->store('images','public');
         $post =  new Office();
 
@@ -91,6 +90,7 @@ class AnuncianteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function search(Request $request){
 
         $search = $request->input('search');
@@ -139,4 +139,10 @@ class AnuncianteController extends Controller
     {
         //
     }
+
+    public function cadastroconsultorio(){
+        return view('oauth.cadastroconsultorio');
+    }
+
 }
+
