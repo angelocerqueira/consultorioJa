@@ -34,7 +34,7 @@ export default function initModal() {
 
 
     botaoAbrir.addEventListener('click', toggleModal);
-    botaoAbrirMobile.addEventListener('click', toggleModal);
+    // botaoAbrirMobile.addEventListener('click', toggleModal);
     botaoFechar.addEventListener('click', toggleModal);
     abrirCadastro.addEventListener('click', cadastro);
     fecharCadastro.addEventListener('click',  colocarLogin);

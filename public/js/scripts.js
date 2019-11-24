@@ -1,8 +1,6 @@
 import initModal from './modal.js';
 import initMenu from './menu-mobile.js';
-import initModalMobile from './modal-mobile.js';
 
-initModalMobile();
 initModal();
 initMenu();
 
