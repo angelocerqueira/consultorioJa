@@ -19,6 +19,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        'http://consutorioja.local/2/immobiles/enrollment/thanks'
     ];
 }

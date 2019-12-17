@@ -9,6 +9,11 @@
 @import "dropzone.css";
 @import "buscaavancada.css";
 @import "resultbusca.css";
+@import "imovel.css";
+@import "enrollment.css";
+@import "DatPayment.css";
+
+
 
 
 body, input, button, textarea, label {font-family: 'Raleway', sans-serif;}
@@ -16,5 +21,4 @@ h1, h2, h3, h4{ font-family: 'Poppins', sans-serif;}
 
 .rotate90{
     transform: rotate(90deg);
-
 }

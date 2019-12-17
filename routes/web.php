@@ -15,23 +15,32 @@ Route::get('/', 'Controller@homepage');
 Route::get('/cadastro', function(){
     return view('pages.cadastro');
 });
-Route::get('/quemsomos', function () { return view('pages.quemsomos'); });
-Route::get('/faleconosco', function () { return view('pages.faleconosco'); });
-Route::get('/resultbusca/buscaavancada', function () { return view('pages.buscaavancada'); });
+Route::get('/quemsomos', 'Controller@about');
+Route::get('/faleconosco', 'Controller@contact');
 
 
-Route::get('/resultbusca', 'AnuncianteController@index');
 Route::post('/cadastrarconsultorio', 'AnuncianteController@store');
-
-
-
 Route::get('/search' ,'AnuncianteController@search' );
 Route::get('/searchAdvanced' ,'SearchAdvancedController@search' );
+
 Route::get('/searchHome' ,'Controller@searchHome');
+
 
 Route::get('/cadastroconsultorio', function(){
     return view('acessoAnunciante.cadastroconsultorio');
 });
+
+Route::get('/immobiles/seach-advanced', 'Controller@searchAdvanced');
+Route::get('/immobiles', 'SearchController@index');
+Route::get('/{immobileId}/immobiles', 'SearchController@show');
+Route::get('/{immobileId}/immobiles/enrollment', 'SearchController@enrollment');
+Route::post('/{immobileId}/immobiles/enrollment/thanks', 'SearchController@thanks');
+
+// Route::get('/{id}/imovel', function (){
+//     return view('pages.imovel');
+// });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

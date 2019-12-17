@@ -9,6 +9,13 @@ use Illuminate\Support\Facades\DB;
 
 class SearchAdvancedController extends Controller
 {
+
+    protected $office;
+
+    public function __construct(Office $office)
+    {
+        $this->office = $office;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -16,6 +23,7 @@ class SearchAdvancedController extends Controller
      */
 
     public function search(Request $request){
+       $office = $this->office->get();
 
         $estado = $request->input('estado');
         $cidade = $request->input('cidade');
@@ -24,81 +32,26 @@ class SearchAdvancedController extends Controller
         // $specialties = $request->input('specialties');
         // $equipaments = $request->input('equipaments');
 
-        $post = DB::table('offices')->where('uf', 'like', '%'. $estado.'%')
+        // dd($period_atend);
+
+        $post = DB::table('offices')
+        ->where('uf', 'like', '%'. $estado.'%')
         ->where('cidade', 'like', '%'. $cidade.'%')
         ->paginate(9);
-        return view('pages.resultbusca',['post' => $post]);
+ // ->where('period_atend', 'like', '%'. $period_atend !== null ? implode(',' , $period_atend) : $period_atend .'%')
+        // ->where('days_atend', 'like', '%'. $days_atend !== null ? implode(',', $days_atend) : $days_atend.'%')
+        // ->where('specialties', 'like', '%'. $specialties !== null ? implode(',', $specialties) : $specialties .'%')
+        // ->where('equipaments', 'like', '%'. $equipaments !== null ? implode(',', $equipaments) : $equipaments.'%')
+
+        dd($post);
+
+
+
+        // dd($post);
+
+        return view('pages.immobilesresult',['post' => $post], compact('office'));
     }
 
 
-    public function index()
-    {
-        //
-    }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

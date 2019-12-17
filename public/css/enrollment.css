@@ -1,0 +1,135 @@
+
+.enrollment
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px  ;
+}
+
+.form-card-credit
+{
+    max-width: 600px;
+}
+
+.enrollment .card
+{
+    max-width: 300px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 20%);
+    cursor: pointer;
+
+}
+.enrollment .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 10%);
+    transition: .3s;
+
+}
+
+.enrollment .card .classificacao
+{
+    background: #69E91C;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -30px;
+    left: 25px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 50%);
+}
+/* .enrollment .card .img
+{
+    height: 300px;
+} */
+
+.enrollment .card .img img
+{
+    border-radius: 10px  10px 0 0;
+}
+
+.enrollment .card .card-corpo .periodo
+{
+    margin-top: 20px;
+}
+.enrollment .card .card-corpo
+{
+
+    padding: 10px;
+
+}
+.card-corpo .svg-inline--fa
+{
+    color:  #00C9D7;
+}
+.enrollment .card .card-corpo .titulo h1
+{
+    font-size: 1.5em;
+    color: #00C9D7;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.enrollment .card .card-corpo .titulo p
+{
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5em;
+    color: #000 !important;
+
+}
+
+.enrollment .card .card-corpo .dias ul,
+.enrollment .card .card-corpo .periodo ul,
+.enrollment .card .card-corpo .valores ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enrollment .card .card-corpo .dias ul li,
+.enrollment .card .card-corpo .periodo ul li,
+.enrollment .card .card-corpo .valores ul li
+{
+    margin: 10px 5px 20px 5px;
+    font-size: .9em;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.enrollment .card .card-corpo .sub-title
+{
+    display: flex;
+    align-items: center;
+}
+.enrollment .card .card-corpo .sub-title h3
+{
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: .6em;
+    font-family: Helvetica, sans-serif !important;
+}
+
+.enrollment .card .card-corpo .dias ul li
+{
+    background: #00C9D7;
+}
+
+.enrollment .card .card-corpo .periodo ul li
+{
+    background: #281CBA;
+}
+
+.enrollment .card .card-corpo .valores ul li
+{
+    background: #3DCC7D;
+}

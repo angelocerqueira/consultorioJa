@@ -14,6 +14,12 @@ use Illuminate\Http\Request;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    protected $office;
+
+    public function __construct(Office $office){
+        $this->office = $office;
+    }
+
 
     public function homepage(){
 
@@ -24,17 +30,36 @@ class Controller extends BaseController
         return view('index', compact('post'));
     }
 
-  public function searchHome(Request $request){
-
+    public function searchHome(Request $request)
+    {
+        $office = $this->office->get();
         $uf = $request->input('uf');
         $cidade = $request->input('cidade');
 
         $post_home = DB::table('offices')->where('cidade', 'like', '%'. $cidade.'%')
         ->orWhere('uf', 'like', '%'. $uf.'%')
         ->paginate(9);
-        return view('pages.resultbusca',['post' => $post_home]);
+        return view('pages.immobilesresult',['post' => $post_home], compact('office'));
     }
 
+     public function about()
+    {
+        return view('pages.quemsomos');
+    }
+
+    public function cadastro()
+    {
+        return view('pages.cadastro');
+    }
+    public function contact(){
+        return view("pages.faleconosco");
+    }
+
+    public function searchAdvanced(){
+        $office = $this->office->get();
+        // dd($office);
+        return view('pages.searchadvanced', compact('office'));
+    }
 
 }
 

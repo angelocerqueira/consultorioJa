@@ -59,6 +59,7 @@
                                 <label for="">Título do anúncio</label>
                                 <input type="text" class="validando" placeholder="Insira um título para seu anúncio com no máximo 80 caracteres. Ex: Sala ampla e completa para atendimento no centro de São Paulo" maxlength="80" oninput="this.className = ''" name="title">
                             </div>
+                            {{-- <input type="hidden" value=" {{ $this->user->id }}" name="user_id" /> --}}
                             <div class="form-group lg">
                                 <label for="">Descrição da Sala</label>
                                 <textarea name="description" id="" class="validando" rows="7" placeholder="Descrição detalhada da sala e seus principais diferencias. Fornecer informações sobre localização, equipamentos, insumos, etc" oninput="this.className = ''"></textarea >
@@ -218,7 +219,7 @@
                             <h2 class="tabh2">Selecione as imagens para o campo abaixo. <span> No máximo 10 fotos.</h2>
                             <div class="imagens dropzone" id="my-awesome-dropzone" >
                                 <div class="fallback">
-                                    <input name="file" type="file" multiple />
+                                    <input name="file[]" type="file" multiple required>
                                 </div>
                             </div>
                         </div>

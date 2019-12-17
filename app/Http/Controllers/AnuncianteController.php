@@ -16,132 +16,105 @@ class AnuncianteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public $office;
+    public function __construct(Office $office){
+        $this->office = $office;
+    }
+
     public function index()
     {
-        $post = DB::table('offices')->paginate(9);
+
+        $office = $this->office->with('photos')->paginate(9);
+        // foreach($test as $testes){
+
+        // }
         // $post = Office::all();
-        return view('pages.resultbusca', compact('post'));
-
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
+        return view('pages.immobilesresult', compact(['office']));
     }
 
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
 
+           $data = $request->all();
+        $data['structure'] = implode(",", $data['structure']);
+        $data['specialties'] = implode(",", $data['specialties']);
+        $data['equipaments'] = implode(",", $data['equipaments']);
+        $data['period_atend'] = implode(",", $data['period_atend']);
+        $data['days_atend'] = implode(",", $data['days_atend']);
+        $data['file'] = implode(",", $data['file']);
 
-            $request->validate([
-                'title' => 'required|min:15|max:80',
-                'description' => 'required',
-                'cep' => 'required',
-                'uf' => 'required',
-                'cidade' => 'required',
-                'endereco' => 'required',
-                'number' => 'required',
-                'structure' => 'required',
-                'specialties' => 'required',
-                'equipaments' => 'required',
-                'period_atend' => 'required',
-                'days_atend' => 'required',
-                'value_h' => 'required',
-                'value_m' => 'required',
-            ]);
+        $images = $request->file('file');
+        try{
 
-        $path = $request->file('file')->store('images','public');
-        $post =  new Office();
+            $office = $this
+            ->office
+            ->create($data);
 
-        $post ->title =$request->input('title');
-        $post ->description =$request->input('description');
-        $post ->cep =$request->input('cep');
-        $post ->uf =$request->input('uf');
-        $post ->cidade =$request->input('cidade');
-        $post ->endereco =$request->input('endereco');
-        $post ->number =$request->input('number');
-        $post ->complement =$request->input('complement');
-        $post ->structure = implode(",", $request->input('structure'));
-        $post ->specialties =implode(",", $request->input('specialties'));
-        $post ->equipaments =implode(",", $request->input('equipaments'));
-        $post ->file = $path;
-        $post ->period_atend =implode(",", $request->input('period_atend'));
-        $post ->days_atend =implode(",", $request->input('days_atend'));
-        $post ->value_h =$request->input('value_h');
-        $post ->value_m =$request->input('value_m');
-        $post->save();
-        return redirect('/resultbusca');
+            if($images){
+                $imagesUploaded = [];
+                // dd($imagesUploaded);
+
+                foreach($images as $image)
+                {
+                   $path = $image->store('images', 'public');
+                   $imagesUploaded[] = ['photo' => $path, 'is_thumb' => false ] ;           // dd($path);
+
+                }
+
+                $office->photos()->createMany($imagesUploaded);
+            }
+
+
+          return redirect('/resultbusca');
+
+        }
+        catch(\Exception $e){
+            return response()
+            ->json(['error' =>
+            $e->getMessage()], 400);
+        }
+
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
 
-    public function search(Request $request){
 
+
+
+    public function search(Request $request)
+    {
+        $office= $this->office->get();
         $search = $request->input('search');
-        $post = DB::table('offices')->where('cidade', 'like', '%'. $search.'%')->paginate(9);
-        return view('pages.resultbusca',['post' => $post]);
+        // dd($search);
+
+        $post = DB::table('offices')
+        ->where('cidade', 'like', '%'. $search .'%')
+        ->where('endereco', 'like', '%'. $search .'%')
+        ->where('structure', 'like', '%'. $search .'%')
+        ->paginate(9);
+
+
+        // dd($a);
+
+        return view('pages.immobilesresult',['post' => $post], compact('office'));
     }
 
 
     public function show($id)
     {
-        $post = DB::select('select * from offices where id = ?', $id);
-        // $post = Office::all();
-        return view('pages.resultbusca', compact('post'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
-        //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
-        //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
-        //
-    }
-
-    public function cadastroconsultorio(){
-        return view('oauth.cadastroconsultorio');
     }
 
 }

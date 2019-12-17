@@ -26,7 +26,7 @@
           </ul>
         </div>
         <div class="button-intro">
-        <button> Veja Mais</button>
+       <a href="/immobiles"> <button> Veja Mais</button></a>
       </div>
       </div>
       <div class="card-2">
@@ -106,7 +106,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec justo libero, iaculis non gravida quis</p>
       <p> Sed scelerisque at justo ac rutrum. Maecenas vitae est libero. Etiam nec lacus ultrices, bibendum lorem et, mollis nunc. Praesent eu lacinia neque. Morbi sed convallis orci. Proin blandit pellentesque lectus et faucibus. Aliquam bibendum molestie justo, eget finibus sem aliquet vel.</p>
       <div class="button">
-      <button>Cadastre sua clinica</button>
+     <a href="/cadastro"> <button>Cadastre sua clinica</button></a>
     </div>
     </div>
   </section>

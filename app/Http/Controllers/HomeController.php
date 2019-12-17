@@ -25,4 +25,26 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    // public function homepage(){
+
+    //     // $post = Office::all()->unique();
+    //     $post = DB::select('select uf, cidade from offices ');
+
+    //     // $post = Office::all();
+    //     return view('index', compact('post'));
+    // }
+
+    // public function searchHome(Request $request){
+
+    //     $uf = $request->input('uf');
+    //     $cidade = $request->input('cidade');
+
+    //     $post_home = DB::table('offices')->where('cidade', 'like', '%'. $cidade.'%')
+    //     ->orWhere('uf', 'like', '%'. $uf.'%')
+    //     ->paginate(9);
+    //     return view('pages.immobilesresult',['post' => $post_home]);
+    // }
+
+
 }
